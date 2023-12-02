@@ -15,7 +15,7 @@ def jaccard_similarity(str1, str2):
 
     return float(len(c)) / (len(a) + len(b) - len(c))
 
-def remove_scattered_duplicates_and_extract_empty(pdf_path, similarity_threshold=0.95):
+def remove_scattered_duplicates_and_extract_empty(pdf_path, similarity_threshold=0.95): #increase similarity threshold for stricter duplicate guideline, decrease for looser. I find between .85 & .95 works well.
     reader = PyPDF2.PdfReader(pdf_path)
     writer = PyPDF2.PdfWriter()
     empty_writer = PyPDF2.PdfWriter()  # For storing empty pages
