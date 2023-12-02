@@ -40,7 +40,7 @@ def remove_scattered_duplicates_and_empty_pages(pdf_path, similarity_threshold=0
             seen_content.append(content)
 
     # Save the new PDF without duplicates and empty pages
-    with open("output_reduced_no_empty_or_duplicate_pages.pdf", "wb") as output_pdf:
+    with open("output_reduced_no_empty_or_duplicate_pages.pdf", "wb") as output_pdf: #replace 'output_reduced_no_empty_or_duplicate_pages' with the output filename you want 
         writer.write(output_pdf)
 
-remove_scattered_duplicates_and_empty_pages("Emails.pdf")
+remove_scattered_duplicates_and_empty_pages("Emails.pdf") #replace 'Emails' with the filename of the raw pdf you want to analyze

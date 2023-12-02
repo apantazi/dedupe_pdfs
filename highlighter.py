@@ -32,4 +32,4 @@ def highlight_dates(pdf_path, output_path):
     # Save the modified PDF
     doc.save(output_path)
 
-highlight_dates("bookmarked_pdf.pdf", "highlighted_dates.pdf")
+highlight_dates("bookmarked_pdf.pdf", "highlighted_dates.pdf") #replace 'bookmarked_pdf' with the filename of the raw pdf you want to analyze, and then replace 'highlighted_dates' with the output filename you want 

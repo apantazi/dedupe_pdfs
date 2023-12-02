@@ -12,7 +12,7 @@ def remove_duplicates(pdf_path):
             seen_pages.add(content)
             writer.add_page(page)
 
-    with open("output.pdf", "wb") as output_pdf:
+    with open("output.pdf", "wb") as output_pdf: #replace 'output' with the output filename you want for the deduped pdf
         writer.write(output_pdf)
 
-remove_duplicates("Emails.pdf")
+remove_duplicates("Emails.pdf") #replace 'Emails' with the filename of the raw pdf you want to analyze

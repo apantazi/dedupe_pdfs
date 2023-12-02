@@ -41,11 +41,11 @@ def remove_scattered_duplicates_and_extract_empty(pdf_path, similarity_threshold
             seen_content.append(content)
 
     # Save the new PDF without duplicates
-    with open("output_reduced_no_duplicates.pdf", "wb") as output_pdf:
+    with open("output_reduced_no_duplicates.pdf", "wb") as output_pdf: #replace 'output_reduced_no_duplicates' with the output filename you want for the deduped pdf
         writer.write(output_pdf)
 
     # Save the PDF with all empty pages
-    with open("output_empty_pages.pdf", "wb") as empty_output_pdf:
+    with open("output_empty_pages.pdf", "wb") as empty_output_pdf: #replace 'output_empty_pages' with the output filename you want for a PDF of all files that appear to be empty (even though they may actually not be empty)
         empty_writer.write(empty_output_pdf)
 
-remove_scattered_duplicates_and_extract_empty("Emails.pdf")
+remove_scattered_duplicates_and_extract_empty("Emails.pdf") #replace 'Emails' with the filename of the raw pdf you want to analyze

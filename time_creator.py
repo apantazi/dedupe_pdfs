@@ -30,7 +30,7 @@ def add_bookmarks(pdf_path):
             writer.add_outline_item(date, page_num)
 
     # Save the new PDF with bookmarks
-    with open("bookmarked_pdf.pdf", "wb") as output_pdf:
+    with open("bookmarked_pdf.pdf", "wb") as output_pdf:  #replace 'bookmarked_pdf' with the output filename you want 
         writer.write(output_pdf)
 
-add_bookmarks("output_reduced_no_empty_or_duplicate_pages.pdf")
+add_bookmarks("output_reduced_no_empty_or_duplicate_pages.pdf") #replace 'output_reduced_no_empty_or_duplicate_pages' with the filename of the raw pdf you want to analyze
